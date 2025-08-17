@@ -1,6 +1,6 @@
 class Solution {
     public int removeDuplicates(int[] arr) {
-       int idx = 1;
+        int idx = 1;
         int i=1;
         while(i<arr.length){
             if(arr[i]!=arr[i-1]){
