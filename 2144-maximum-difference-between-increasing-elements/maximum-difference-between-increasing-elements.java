@@ -1,9 +1,9 @@
 class Solution {
     public int maximumDifference(int[] arr) {
-        int small = Integer.MAX_VALUE;
-        int big = Integer.MIN_VALUE;
+        int small = arr[0];
+        int big =  arr[0];
         int max_diff =-1;
-        for(int i=0;i<arr.length;i++)
+        for(int i=1;i<arr.length;i++)
         {
             
             
