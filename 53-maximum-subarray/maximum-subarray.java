@@ -5,6 +5,8 @@ class Solution {
         for(int i = 0; i < arr.length; i++){
             sum = Math.max(sum+arr[i], arr[i]);
             maxSum = Math.max(maxSum, sum);
+            if (sum < 0)
+                sum = 0;
         }
         return maxSum;
     }
