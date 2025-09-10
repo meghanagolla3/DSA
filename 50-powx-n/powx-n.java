@@ -5,12 +5,12 @@ class Solution {
         {
             return 1.0;
         }
-         double half = pow(x, n / 2);
-        if (n % 2 == 0) {
-            return half * half;
-        } else {
-            return half * half * x;
-        }
+        double temp = pow(x, n / 2);
+
+        if (n % 2 == 0)
+            return temp * temp;
+        else
+            return x * temp * temp;
     }
     public double myPow(double x, int n) {
         long N = n;
